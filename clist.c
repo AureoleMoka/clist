@@ -1,16 +1,4 @@
 #include "clist.h"
-/*
-simple haskell rewrite project by AureoleMoka
-This is the characters version.
-
-contact: aureolemoka@gmail.com
-
-Needs to be compiled with gcc because of nested functions.
-Otherwise, nested functions can just be unnested, but i don't like it.
-
-If someone got any idea of how to do this in C, please e-mail me ! Thx.
-This software is free of rights.
-*/
 
 // head : tail : empty
 typedef struct list {
