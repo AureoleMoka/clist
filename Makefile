@@ -6,5 +6,5 @@ main: main.c
 clist: clist.c
 	gcc -c clist.c -o clist.o
 
-clean: main.o clist.o clist
+clean:
 	rm main.o clist.o clist

@@ -1,18 +1,20 @@
 #include "lambda.h"
 
-typedef struct list list;
-list empty;
-list* init (char, list*);
-list* last (list*);
-list* droplast (list*);
-list* con (list*, list*);
-list* single (char);
-list* nth (char, list*);
-size_t length (list*);
-void pl (list*);
-list* range (char, char);
-list* map (char (*f) (char), list*);
-list* filter (_Bool (*p) (char), list*);
-char foldl (char (*f) (char, char), char, list*);
+typedef struct clist *clist;
+clist init (char, clist);
+clist last (clist);
+clist droplast (clist);
+clist con (clist, clist);
+clist single (char);
+clist nth (char, clist);
+size_t length (clist);
+clist reverse (clist);
+int pl (clist);
+clist range (char, char);
+clist map (char (*f) (char), clist);
+clist filter (_Bool (*p) (char), clist);
+clist stocl (char*);
+int ind (clist, char);
+char foldl (char (*f) (char, char), char, clist);
 unsigned long fac (char);
-char sum (list*);
+char sum (clist);
